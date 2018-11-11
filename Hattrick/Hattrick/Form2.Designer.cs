@@ -36,6 +36,7 @@
             this.lblStanjeRacuna = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblTransakcije = new System.Windows.Forms.Label();
+            this.btnIspisTransakcija = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -100,9 +101,9 @@
             this.lblStanjeRacuna.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblStanjeRacuna.Location = new System.Drawing.Point(203, 88);
             this.lblStanjeRacuna.Name = "lblStanjeRacuna";
-            this.lblStanjeRacuna.Size = new System.Drawing.Size(39, 20);
+            this.lblStanjeRacuna.Size = new System.Drawing.Size(64, 20);
             this.lblStanjeRacuna.TabIndex = 8;
-            this.lblStanjeRacuna.Text = "100";
+            this.lblStanjeRacuna.Text = "100.00";
             // 
             // label3
             // 
@@ -120,16 +121,29 @@
             this.lblTransakcije.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblTransakcije.Location = new System.Drawing.Point(13, 170);
             this.lblTransakcije.Name = "lblTransakcije";
-            this.lblTransakcije.Size = new System.Drawing.Size(103, 15);
+            this.lblTransakcije.Size = new System.Drawing.Size(0, 15);
             this.lblTransakcije.TabIndex = 10;
-            this.lblTransakcije.Text = "Nema transakcija";
+            // 
+            // btnIspisTransakcija
+            // 
+            this.btnIspisTransakcija.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnIspisTransakcija.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnIspisTransakcija.Location = new System.Drawing.Point(825, 73);
+            this.btnIspisTransakcija.Name = "btnIspisTransakcija";
+            this.btnIspisTransakcija.Size = new System.Drawing.Size(147, 50);
+            this.btnIspisTransakcija.TabIndex = 11;
+            this.btnIspisTransakcija.Text = "Ispis transakcija";
+            this.btnIspisTransakcija.UseVisualStyleBackColor = false;
+            this.btnIspisTransakcija.Click += new System.EventHandler(this.btnIspisTransakcija_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(984, 361);
+            this.Controls.Add(this.btnIspisTransakcija);
             this.Controls.Add(this.lblTransakcije);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblStanjeRacuna);
@@ -156,6 +170,7 @@
         private System.Windows.Forms.Label lblStanjeRacuna;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblTransakcije;
+        private System.Windows.Forms.Button btnIspisTransakcija;
     }
 }
 
